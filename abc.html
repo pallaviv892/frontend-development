@@ -1,46 +1,233 @@
-<html>
-    <head>
-    </head>
-    <body>
-    <h1>V PALLAVI</h1>
-        <img src="C:\Users\divee\Pictures\download.jpg" alt="download.jpg">
-        <p>Web Developer | Designer | Creator</p>
-        <div ><h1> Navigation bar</h1>
-        <p> Email<a href=</p></div>
-  
-    <p> Computer Science and Engineer</p>
-    <hr>
-    <h1>About me</h1>
-    <p>MySelf Pallavi.Iam Pasionate about coding in python and java.I have worked on so many real time projects</p>
-    <hr>
-    <ol>
-      <h2>Languages Known</h2>
-  <li>Telugu</li>
-  <li>English</li>
-  <div
-  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V Pallavi Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-</ol>
-    <hr>
-    <h2>Skills</h2>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        line-height: 1.6;
+        padding-top: 60px;
+      }
 
-<ul>
-  <li>java,C,Python</li>
-  <li>Html,Css,Java Script</li>
-  <li>Ms excel,ms Word,photo shop,power point</li>
-</ul>  
-<hr>
-    <dl>
-  <h2><dt>Library Management System</dt></h2>
-  <dd>- This project is use ful for both libarian and the students.</dd>
- <h2> <dt>Customer Relationship Management</dt></h2>
-  <dd>-it mainly plays a role of customer interaction</dd>
-</dl>
-<div id="Contact me">
-  <h2> Contact</h2>
-  <p>Email:<a href="mailto:venkatpallavi123@gmail.com">venkateshpallavi@gmail.com</a></p>
-<p>GitHub:<a href="https://github.com/in/pallaviv892">github.com/pallaviv892</a></p>
-<p>Linkdin:<a href="https://www.linkedin.com/in/V Pallavi" >linkdin.com/V Pallavi</a></p>
-</div>
-</body>
+      header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: auto;
+        padding: 15px 20px;
+      }
+
+      .logo {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #0077cc;
+        text-decoration: none;
+      }
+
+      .nav-links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+
+      .nav-links a:hover {
+        color: #0077cc;
+      }
+
+      .section {
+        margin: 30px auto;
+        padding: 20px;
+        max-width: 1000px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      h1, h2 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      img {
+        max-width: 200px;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      ul, ol {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+
+      a {
+        color: #0077cc;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .heading-divider {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        border-bottom: 3px solid #0077cc;
+        display: inline-block;
+      }
+
+      #contact, #contact-form {
+        background-color: #eef6fb;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      input, textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        width: 100%;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #0077cc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        width: fit-content;
+      }
+
+      button:hover {
+        background-color: #005fa3;
+      }
+
+      .download-resume {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <a href="#" class="logo">V PALLAVI</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact-form">Message</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="section" id="home">
+      <h1>V PALLAVI</h1>
+      <img src="C:\Users\LAB\Downloads\pallu.jpg" alt="Pallavi Photo" />
+      <p>Web Developer | Designer | Creator</p>
+      <div class="download-resume">
+        <a href="C:\Users\LAB\Downloads\resume.pdf.pdf" download><button>Download Resume</button></a>
+      </div>
+    </div>
+
+    <div class="section" id="about">
+      <div class="heading-divider">About Me</div>
+      <p>
+        Myself Pallavi. I am passionate about coding in Python and Java.
+        I have worked on many real-time projects.
+      </p>
+      <p><strong>Field:</strong> Computer Science and Engineering</p>
+    </div>
+
+    <div class="section">
+      <div class="heading-divider">Languages Known</div>
+      <ol>
+        <li>Telugu</li>
+        <li>English</li>
+      </ol>
+    </div>
+
+    <div class="section" id="skills">
+      <div class="heading-divider">Skills</div>
+      <ul>
+        <li>Java, C, Python</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>MS Excel, MS Word, Photoshop, PowerPoint</li>
+      </ul>
+    </div>
+
+    <div class="section" id="projects">
+      <div class="heading-divider">Projects</div>
+      <dl>
+        <dt><strong>Library Management System</strong></dt>
+        <dd>- Useful for both librarians and students.</dd>
+        <br />
+        <dt><strong>Customer Relationship Management</strong></dt>
+        <dd>- Plays a key role in customer interaction.</dd>
+      </dl>
+    </div>
+
+    <div class="section" id="contact">
+      <div class="heading-divider">Contact</div>
+      <p>Email: <a href="mailto:venkateshpallavi@gmail.com">venkateshpallavi@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/pallaviv892">github.com/pallaviv892</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/v-pallavi">linkedin.com/in/v-pallavi</a></p>
+    </div>
+
+    <div class="section" id="contact-form">
+      <div class="heading-divider">Contact Me</div>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </body>
 </html>
